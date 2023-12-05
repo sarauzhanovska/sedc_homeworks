@@ -1,0 +1,365 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    
+    
+   
+}
+
+
+.snowflakes {
+	width: 100%; height: 1200px;
+	position: absolute; top: -90px; left: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+i, i:after, i:before { background: rgb(157, 222, 255); }
+i {
+	display: inline-block;
+	animation: snowflakes 3s linear 2s 20;
+	animation: snowflakes 3s linear 2s 20;
+	position: relative;
+}
+i:after, i:before {
+	height: 100%;
+	width: 100%;
+	content: ".";
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	transform: rotate(120deg);
+}
+i:before { transform: rotate(240deg); }
+
+@keyframes snowflakes {
+	0% {
+		transform: translate3d(0,0,0) rotate(0deg) scale(0.6);
+	}
+	100% {
+		-webkit-transform: translate3d(15px, 1200px, 0px) rotate(360deg) scale(0.6);
+	};
+}
+
+.snowflakes i:nth-child(3n) {
+    
+	width: 16px; height: 4px;
+	animation-duration: 4s;
+	animation-iteration-count: 30;
+	transform-origin: right -45px;
+}
+
+.snowflakes i:nth-child(3n+1) {
+	width: 24px; height: 6px;
+	animation-duration: 6s;
+	animation-iteration-count: 45;
+	transform-origin: right -30px;
+}
+
+.snowflakes i:nth-child(3n+2) {
+	width: 30px; height: 8px;
+	animation-duration: 8s;
+	animation-iteration-count: 60;
+	transform-origin: right -15px;
+}
+
+.snowflakes i:nth-child(7n) {
+  opacity:.3;
+  animation-delay: 0s;
+  animation-timing-function:ease-in;
+}
+.snowflakes i:nth-child(7n+1) {
+  opacity:.4;
+  animation-delay: 1s;
+  animation-timing-function:ease-out;
+}
+.snowflakes i:nth-child(7n+2) {
+  opacity:.5;
+  animation-delay: 1.5s;
+  animation-timing-function:linear;
+}
+.snowflakes i:nth-child(7n+3) {
+  opacity:.6;
+  animation-delay: 2s;
+  animation-timing-function:ease-in;
+}
+.snowflakes i:nth-child(7n+4) {
+  opacity:.7;
+  animation-delay: 2.5s;
+  animation-timing-function:linear;
+}
+.snowflakes i:nth-child(7n+5) {
+  opacity:.8;
+  animation-delay: 3s;
+  animation-timing-function:ease-out;
+}
+.snowflakes i:nth-child(7n+6) {
+  opacity:.9;
+  animation-delay: 3.5s;
+  animation-timing-function:ease-in;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.nav-bar{
+    background-color: rgb(72, 72, 72);
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+.search-form{
+    text-align: center;
+    background-color: rgba(215,219,222,255);
+    color: rgb(0, 0, 0);
+    width: 400px;
+    border-radius: 10px;
+   
+}
+#search{
+
+    border: none;
+    background-color:rgba(215,219,222,255);
+    color: rgb(0, 0, 0);
+    
+}
+#icon{
+    border: none;
+}
+
+
+.image2{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 20px;
+}
+
+.masks{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.container .product-container{
+    display: grid;
+    /* grid-row: 2fr 2fr; */
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.container .product-container .product{
+    text-align:center;
+    /* color:rgba(215,219,222,255); */
+    color: black;
+    transition: 2s;
+
+}
+.container .product-container .product img:hover{
+    box-shadow: 0 8px 12px 0 rgba(27, 25, 27, 0.811);
+}
+
+.container .product-container .product img{
+    height: 25rem;
+}
+
+.vitamin-c{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.acid{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.cont{
+    background-color:rgba(103, 103, 103, 0.811) ;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.follow-us{
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    margin-top: 20px;
+    
+}
+
+
+.border {
+    width: 80%;
+    height:550px;
+    /* padding: 10px; */
+    border: 1px solid rgb(0, 0, 0);
+margin-left: 150px;
+  }
+.container-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+.container-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+.container-3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+.container-4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+    margin-left: 40px;
+}
+.container-5{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin-left: 40px;
+}
+.container-6{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+    margin-left: 80px;
+}
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+#name{
+    width: 400px;
+    height: 80px;
+    border-radius: 10px;
+
+}
+#email{
+    width: 400px;
+    height: 80px;
+    border-radius: 10px;
+
+}
+
+#number{
+    width: 400px;
+    height: 80px;
+    border-radius: 10px;
+
+}
+
+#comment{
+    width: 400px;
+    height: 100px;
+    border-radius: 10px;
+
+}
+#submit{
+    width: 600px;
+    height: 50px;
+    background-color: rgba(103, 103, 103, 0.811);
+    border-radius: 10px;
+
+}
+
+#submit:hover{
+    color: aliceblue;
+    box-shadow: inset;
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.house{
+    color: aliceblue;
+}
+
+.container-container{
+    display: flex;
+    justify-content: space-around;
+    text-align: justify;
+}
+.add-card{
+    background-color: rosybrown;
+    width: 200px;
+    height: 30px;
+}
+.buy{
+    background-color: rosybrown;
+    width: 200px;
+    height: 30px;
+   
+}
+
+
+.card{
+    background-color: rgb(189, 155, 2);
+    width: 200px;
+    height: 30px;
+}
+.b{
+    background-color: rgb(189, 155, 2);
+    width: 200px;
+    height: 30px;
+
+}
+.button-card{
+    width: 200px;
+    height: 30px;
+    background-color: rgb(161, 105, 2);
+}
+
+.button-buy{
+    width: 200px;
+    height: 30px;
+    background-color: rgb(161, 105, 2);
+}
+
+.class-card{
+    width: 200px;
+    height: 30px;
+    background-color: rgb(30, 183, 254);
+}
+.class-buy{
+    width: 200px;
+    height: 30px;
+    background-color: rgb(30, 183, 254);
+}
